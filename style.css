@@ -1,0 +1,123 @@
+body {
+	text-align: center;
+	background-color: #f5f5f5;
+	font-family: 'Press Start 2P', cursive;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: #333;
+}
+
+#level-title {
+	font-size: 3rem;
+	margin-bottom: 50px;
+	color: #333;
+}
+
+.console {
+	background-color: #c1c0c0bf;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 150px);
+	grid-template-rows: repeat(2, 150px);
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	width: 150px;
+	border: 5px solid #333;
+	border-radius: 15px;
+	cursor: pointer;
+	outline: none;
+	transition: transform 0.1s, box-shadow 0.1s, border-color 0.2s;
+	transition:
+		transform 0.1s,
+		box-shadow 0.1s,
+		border-color 0.2s,
+		opacity 0.2s;
+}
+
+.btn:active {
+	transform: scale(0.95);
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.btn img {
+	height: 60%;
+	width: 60%;
+}
+
+.red {
+	background-color: #ff6666;
+}
+
+.red:active {
+	border-color: #cc0000;
+}
+
+.green {
+	background-color: #66ff66;
+}
+
+.green:active {
+	border-color: #009900;
+}
+
+.blue {
+	background-color: #6666ff;
+}
+
+.blue:active {
+	border-color: #0000cc;
+}
+
+.yellow {
+	background-color: #ffff66;
+}
+
+.yellow:active {
+	border-color: #cccc00;
+}
+
+.pressed {
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+	background-color: #dcdcdc;
+}
+
+.game-over {
+	background-color: #ff4d4d;
+	opacity: 0.8;
+}
+
+.flash {
+	animation: flash 0.3s ease;
+}
+
+@keyframes flash {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
