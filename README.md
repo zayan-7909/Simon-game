@@ -56,15 +56,7 @@ Simon-game/
 4. A new color is added after every successful level.
 5. The game ends if you click the wrong button.
 
-## 📸 Screenshot
 
-Add a screenshot of your game here.
-
-Example:
-
-```
-![Simon Game](screenshot.png)
-```
 
 ## 👨‍💻 Author
 
